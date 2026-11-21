@@ -40,6 +40,8 @@ pub enum Hand {
 }
 
 impl Hand {
+    pub const ALL: [Self; 3] = [Self::Hour, Self::Minute, Self::Second];
+
     pub fn turn(self, time: ClockTime) -> f32 {
         match self {
             Self::Hour => time.hour_turn(),

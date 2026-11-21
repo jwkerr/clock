@@ -6,6 +6,7 @@ The clock opens to the current time of your computer, all hands can be dragged w
 
 There is a teacher control panel where:
 - The time can be edited in digital format.
+- Hands can be toggled to move independently of each other, for the purpose of asking the student to enter the correct time.
 - An "arc" representing the time elapsed within the hour can be displayed.
 - A toggle for an outer ring of minutes in intervals of 5 is present.
 - You can toggle whether the seconds hand displays.
