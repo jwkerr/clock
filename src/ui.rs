@@ -50,7 +50,7 @@ impl ClockApp {
         Self {
             time,
             independent_turns: None,
-            show_minutes: true,
+            show_minutes: false,
             show_arc: false,
             show_seconds: false,
             drag: None,
@@ -69,7 +69,7 @@ impl ClockApp {
 
     fn teacher_panel(&mut self, ui: &mut Ui) {
         egui::CollapsingHeader::new("Teacher controls")
-            .default_open(true)
+            .default_open(false)
             .show(ui, |ui| {
                 let mut independent = self.independent_turns.is_some();
                 if ui.checkbox(&mut independent, "Independent hands").changed() {
